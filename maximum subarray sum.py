@@ -1,13 +1,14 @@
 def maxSubArray(nums)
-        if not nums: //Checking the corner cases
+        if not nums: #Checking the corner cases
             return 0
-        currsum = maxsum = nums[0] //Initializing with 1st element
-        for i in nums[1:]: // running from 1 to length
-            if currsum > 0 : // checking if currsum is positive
-                currsum+=i
+        currsum = maxsum = nums[0]              #Initializing with 1st element
+        for i in nums[ 1 :] :                   # running from 1 to length
+            if currsum > 0 :                    # checking if currsum is positive
+                currsum += i
+                
             else:
                 currsum = i
-            maxsum=max(maxsum,currsum) // keeping track of maximum sum
+            maxsum=max(maxsum,currsum)          # keeping track of maximum sum
      
         return maxsum
         
