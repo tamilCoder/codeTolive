@@ -23,6 +23,6 @@ x = 10
 ans = binary_search(l, x) 
   
 if ans != -1:  
-    print("Element is present at index", result) 
+    print("Element is present at index", ans) 
 else: 
     print("Element is not present in array")
