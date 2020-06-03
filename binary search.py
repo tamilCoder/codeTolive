@@ -8,13 +8,12 @@ def binary_search(arr, x):
   
         mid = (L + R) // 2          #Finding middle Index
         
-        if arr[mid] == x: 
+        if arr[mid] == x:           #Goes when we get x
             return mid
-        elif arr[mid] < x:            #Goes when x is on the RHS
+        elif arr[mid] < x:          #Goes when x is on the RHS
             L = mid + 1
         elif arr[mid] > x:          #Goes when x is on the LHS
             R = mid - 1
-                      #Goes when we get x
             
     return -1                       #Goes when x is not in the array
   
